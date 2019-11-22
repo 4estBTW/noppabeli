@@ -35,6 +35,7 @@ function rollDice() {
         alert("You got 100 (or more) points, you win!");
             document.location.reload();
             clearInterval(interval);
+            return;
     }
     else if (d1 == 1 || d2 == 1) {
         message = "You rolled a 1, you lost all points!"
