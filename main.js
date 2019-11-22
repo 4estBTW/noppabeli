@@ -31,6 +31,11 @@ function rollDice() {
         diceTotal = (d1 + d2) * 2;
         updateUi();
     }
+    else if (score == 100) {
+        alert("You got 100 (or more) points, you win!");
+            document.location.reload();
+            clearInterval(interval);
+    }
     else if (d1 == 1 || d2 == 1) {
         message = "You rolled a 1, you lost all points!"
         changeTurn();
