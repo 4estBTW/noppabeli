@@ -10,7 +10,6 @@ function updateUi(){
     status2.innerHTML = message;
 }
 
-
 function rollDice() {
     message = "";
     var die1 = document.getElementById("die1");
@@ -43,9 +42,7 @@ function rollDice() {
     score += diceTotal;
 
     updateUi();
-    
 }
-
 
 function changeTurn(){
     score = 0;
@@ -56,12 +53,10 @@ function changeTurn(){
     updateUi();
 }
 
-
 function endTurn(){
     players[turn].points = score;
     changeTurn();
 }
-
 
 updateUi();
 
