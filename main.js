@@ -1,4 +1,12 @@
 let players = [{ name: "Player1", points: 0 }, { name: "Player2", points: 0 }, { name: "Player3", points: 0 }];
+let Player1 = "Player1";
+let Player2 = "Player2";
+let Player3 = "Player3";
+let palyer1_points = 0;
+let palyer2_points = 0;
+let palyer3_points = 0;
+
+
 let turn = 0;
 var score = 0;
 var message = "";
@@ -8,6 +16,13 @@ function updateUi(){
     document.getElementById('player_name').innerHTML = players[turn].name;
     status.innerHTML = score;
     status2.innerHTML = message;
+
+    var info = document.getElementById("info");
+    info.innerHTML = '';
+    for (let i=0; i<3; i++){
+        info.innerHTML += players[i].name + ' : ' + players[i].points + '<br>'; 
+    }
+
 }
 
 function rollDice() {

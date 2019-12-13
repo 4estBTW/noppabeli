@@ -1,3 +1,9 @@
+.info-grid {
+	width: 60%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
 div.dice{
 	float:left;
 	width:32px;
